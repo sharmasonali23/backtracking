@@ -4,7 +4,7 @@ import java.util.List;
 public class uniqueSubset {
     static List<List<Integer>> ans = new ArrayList<>();
     public static void main(String[] args) {
-           int arr []= new int[]{1,2,3};
+           int arr []= new int[]{1,1,2,3};
 
            List<Integer> temp = new ArrayList<>();
            genUniqueSubset(arr , 0 , ans , temp);
