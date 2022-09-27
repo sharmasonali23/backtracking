@@ -6,8 +6,8 @@ import java.util.List;
 public class generateCombination {
 
     public static void main(String[] args) {
-           int A = 5;
-           int B = 3;
+           int A = 4;
+           int B = 2;
            List<Integer> temp = new ArrayList<>();
            genCombination(A, B , 1 , temp);
     }
@@ -19,6 +19,7 @@ public class generateCombination {
             }
 
             for(int i=idx ;i<=a;i++){
+                //System.out.println(idx);
                 temp.add(i);
                 genCombination(a , b ,temp.get(temp.size()-1)+1 , temp);
                 temp.remove(temp.size()-1);
